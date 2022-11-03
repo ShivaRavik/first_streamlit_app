@@ -37,8 +37,8 @@ try:
       # Display the table on page
       streamlit.dataframe(fruityvice_normalized)
       
-except URLError e:
-  stremlit.error()
+except URLError as e:
+    stremlit.error()
 
 streamlit.stop()
 
